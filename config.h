@@ -1,0 +1,6 @@
+#define MAX_NAME_LEN		64
+#define MAX_MSG_LEN		1024
+#define MAX_PRINT_MSG_LEN	2048
+#define PORT 			50505
+#define SERVER_IP_ADDRESS	"10.7.4.73"
+#define MAX_CLIENT_NAME_LEN 128
