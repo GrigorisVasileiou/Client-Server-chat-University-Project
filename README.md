@@ -1,6 +1,3 @@
-# Client-Server-chat-University-Project
-University project implementing a multithreaded client-server chat application in C.
-
 # Client-Server Chat University Project
 
 This project was developed as part of a Computer Networks university course.
