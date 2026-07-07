@@ -60,7 +60,3 @@ Client
 ## Documentation
 
 The complete implementation details, design decisions, code explanations and execution screenshots are available in **report.pdf**.
-
-## Author
-
-University project developed for the Computer Networks course.
