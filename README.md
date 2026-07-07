@@ -1,6 +1,6 @@
 # Client-Server Chat University Project
 
-This project was developed as part of a Computer Networks university course.
+This project was developed as part of Distributed Systems university course.
 
 It implements a TCP client-server chat application in C using POSIX sockets and pthreads. The project was completed in multiple stages, gradually extending the functionality from a simple request-response
 protocol to a multithreaded chat server supporting multiple clients.
