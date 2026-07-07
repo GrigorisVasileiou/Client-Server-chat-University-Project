@@ -27,12 +27,12 @@ void* receive_thread(void* clientInfo){
     	return NULL;
 	}
     char client_filedescriptorForDeafultName[64];
-    sprintf(client_filedescriptorForDeafultName, "%d", ((*client_fd) - 3)); //Make a client have a default name
+    sprintf(client_filedescriptorForDeafultName, "%d", ((*client_fd) - 3)); 
     strcat(client_name, client_filedescriptorForDeafultName);
     fprintf(stdout, "%s has connected\n", client_name);
     while (1){
     	memset(msg, 0, MAX_MSG_LEN+1);
-        ssize_t read_bytesNew = recvMessage(*client_fd, msg, MAX_MSG_LEN); //The last variable might not be MAX_MSG_LEN and might have to be sent by the sender
+        ssize_t read_bytesNew = recvMessage(*client_fd, msg, MAX_MSG_LEN); 
 		char print_msg[MAX_PRINT_MSG_LEN + 1];
         if (strncmp("\\name ", msg, 6) == 0){
 			int i;
@@ -98,7 +98,7 @@ int main() {
 	struct clientInfoPassed** AllReceiverThreadsInfo;
 
 	AllReceiverThreadsInfo = (struct clientInfoPassed **) malloc(MAX_CONNECTED_CLIENTS * sizeof(struct clientInfoPassed *)); //Allocate memory to store a structure
-	//in which every information necessary for reciver threads is stored
+	//in which every information necessary for receiver threads is stored
 	if (AllReceiverThreadsInfo == NULL){
 		fprintf(stderr, "Allocating memory for structure to store all information for receiver threads failed. Terminating\n");
 		return 0;
