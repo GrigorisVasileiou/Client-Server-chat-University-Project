@@ -59,4 +59,4 @@ Client
 
 ## Documentation
 
-The complete implementation details, design decisions, code explanations and execution screenshots are available in **report.pdf**.
+The complete implementation details, design decisions, code explanations and execution screenshots are available in **Report.pdf**.
